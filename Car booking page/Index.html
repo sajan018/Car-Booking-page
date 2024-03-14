@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: #eaefe7;
+        }
+
+        .Cars {
+            padding: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 20px 130px;
+        }
+
+        .carImg {
+            width: calc(33% - 10px);
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .carImg img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            margin: auto;
+            border-radius: 8px;
+        }
+
+        .BookingBtn {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%;
+            /* Adjust button width */
+            max-width: 200px;
+            /* Limit maximum width */
+            padding: 10px;
+            background-color: #242523;
+            border-radius: 20px;
+            color: #e6d7d7;
+            border: none;
+            cursor: pointer;
+        }
+
+        .BookingBtn:hover {
+            background-color: rgb(69, 78, 75);
+            color: beige;
+        }
+
+
+        @media screen and (max-width: 768px) {
+            .carImg {
+                width: calc(50% - 10px);
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .carImg {
+                width: 100%;
+            }
+
+            .BookingBtn {
+                width: 70%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">About</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Previous Booking</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Car collection
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">mini cars</a></li>
+                                <li><a class="dropdown-item" href="#">family cars</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">All Cars</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Log Out</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <button class="btn btn-outline-success">login</button>
+                        <button class="btn btn-outline-success" type="submit">signup</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="Cars">
+        <div class="carImg img1"><img src="Images/Audi.webp" alt="Audi"><button class="BookingBtn">Book This
+                Car</button></div>
+        <div class="carImg img2"><img src="Images/bmw.webp" alt="bmw"><button class="BookingBtn">Book This Car</button>
+        </div>
+        <div class="carImg img4"><img src="Images/hyundai creta.webp" alt="hyundai"><button class="BookingBtn">Book This
+                Car</button></div>
+        <div class="carImg img5"><img src="Images/Hyundai Exter.jpeg" alt="hyundai"><button class="BookingBtn">Book This
+                Car</button></div>
+        <div class="carImg img6"><img src="Images/jeep.jpg" alt="jeep"><button class="BookingBtn">Book This Car</button>
+        </div>
+        <div class="carImg img7"><img src="Images/KIA Seltos.jpg" alt="KIA"><button class="BookingBtn"> Book This
+                Car</button>
+        </div>
+        <div class="carImg img8"><img src="Images/Maruti Brezza.webp" alt="Maruti"><button class="BookingBtn">Book This
+                Car</button></div>
+        <div class="carImg img9"><img src="Images/maruti froenx.jpeg" alt="maruti"><button class="BookingBtn">Book This
+                Car</button></div>
+        <div class="carImg img10"><img src="Images/scorpio.webp" alt="scorpio"><button class="BookingBtn">Book This
+                Car</button></div>
+
+    </div>
+</body>
+<script src="jsFile/index.js"></script>
+</html>
